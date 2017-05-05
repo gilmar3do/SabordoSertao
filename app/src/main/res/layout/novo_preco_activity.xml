@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TableRow >
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_fruta"/>
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_fruta_preco"
+                ></Spinner>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_tipo_venda"/>
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_tipo_venda_preco"
+                ></Spinner>
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_data_inicial"/>
+
+            <EditText android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/edt_data_inicio_preco"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_data_final"/>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:id="@+id/edt_data_fim_preco"/>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_valor"/>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:id="@+id/edt_valor_preco"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_salvar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_salvar_preco"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancelar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_cancelar_cadastros"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

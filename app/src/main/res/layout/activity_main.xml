@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gilmarf.sabordosertao.MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:weightSum="100">
+    <!--
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"/>-->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:stretchColumns="0, 1, 2"
+        android:layout_gravity="center"
+        android:layout_weight="40"
+        android:weightSum="100"
+        >
+
+        <TableRow android:layout_weight="50">
+
+            <Button android:id="@+id/btn_venda"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_venda"
+                android:onClick="telaVendaClick"/>
+
+            <Button android:id="@+id/btn_despoupa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_despoupa"
+                android:onClick="telaDespoupaClick"/>
+
+            <Button android:id="@+id/btn_despesa"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_despesa"
+                android:onClick="telaDespesaClick"/>
+
+        </TableRow>
+
+        <TableRow android:layout_weight="50">
+
+            <Button android:id="@+id/btn_envase"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_envase"
+                android:onClick="telaEnvaseClick"/>
+
+            <Button android:id="@+id/btn_funcionario"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_funcionario"
+                android:onClick="telaFuncionarioClick"/>
+
+            <Button android:id="@+id/btn_relatorio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/btn_relatorio"
+                android:onClick="telaRelatorioClick"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="30"
+        />
+</LinearLayout>

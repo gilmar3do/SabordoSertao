@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Sabor do Sertao</string>
+    <string name="btn_venda">Venda</string>
+    <string name="btn_despoupa">Despoupa</string>
+    <string name="btn_despesa">Despesa</string>
+    <string name="btn_envase">Envase</string>
+    <string name="btn_funcionario">Funcionario</string>
+    <string name="btn_relatorio">Relatórios</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="txv_fruta">Fruta: </string>
+    <string name="txv_tipo">Tipo: </string>
+    <string name="txv_quantidade">Quantidade: </string>
+    <string name="txv_valor">Valor: </string>
+    <string name="txv_descricao">Descrição: </string>
+    <string name="txv_funcionario">Funcionario: </string>
+    <string name="txv_data">Data: </string>
+    <string name="txv_tempo">Tempo: </string>
+    <string name="txv_qtd_final">Qtd. Final: </string>
+    <string name="txv_kg_poupa">Kg Poupa: </string>
+    <string name="txv_nome">Nome: </string>
+    <string name="txv_tipo_venda">T. Venda: </string>
+    <string name="txv_km_percorrido">Km Percor.: </string>
+    <string name="txv_combustivel">Combustível: </string>
+    <string name="txv_total">Total (R$): </string>
+    <string name="txv_qtd_diluente">Qtd Diluente: </string>
+    <string name="txv_tipo_produto">Tipo de Produto: </string>
+    <string name="txv_medida">Medida: </string>
+    <string name="txv_telefone">Telefone: </string>
+    <string name="txv_cpf">CPF: </string>
+    <string name="txv_data_inicial">Data Inicial: </string>
+    <string name="txv_data_final">Data Final: </string>
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TableRow >
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_nome"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_nome"
+                ></EditText>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_telefone"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_telefone"
+                ></EditText>
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_cpf"/>
+
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_cpf"
+                ></EditText>
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_salvar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_salvar_funcionario"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancelar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_cancelar_cadastros"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

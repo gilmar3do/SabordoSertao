@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TableRow >
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_fruta"/>
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_fruta_despoupa"
+                ></Spinner>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txv_funcionario"/>
+
+            <Spinner
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/spn_funcionario_despoupa"
+                ></Spinner>
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp"
+            android:weightSum="100">
+            <TableRow android:layout_weight="50">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txv_data"/>
+
+                <EditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:id="@+id/edt_data_despoupa"/>
+            </TableRow>
+            <TableRow android:layout_weight="50">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txv_tempo"/>
+
+                <EditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="time"
+                    android:id="@+id/edt_tempo_despoupa"/>
+            </TableRow>
+
+        </TableRow>
+
+        <TableRow android:paddingTop="10dp"
+            android:weightSum="100">
+
+            <TableRow android:layout_weight="50">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txv_qtd_final"/>
+
+                <EditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:id="@+id/edt_qtd_final"/>
+            </TableRow>
+
+            <TableRow android:layout_weight="50">
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/txv_kg_poupa"/>
+
+                <EditText android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/edt_kg_poupa"/>
+            </TableRow>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:weightSum="2">
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_salvar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_salvar_despoupa"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_cancelar"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/btn_cancelar_cadastros"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
